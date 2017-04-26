@@ -55,13 +55,16 @@ void keyPressed(){
 
         if(key == 'a') {
                 left.move(-10);
-        }else if (key == 'z') {
+              }
+        if (key == 'z') {
                 left.move(10);
         }
 
         if(key == 'k') {
                 right.move(-10);
-        }else if (key == 'm') {
+        }
+
+        if (key == 'm') {
                 right.move(10);
         }
 
