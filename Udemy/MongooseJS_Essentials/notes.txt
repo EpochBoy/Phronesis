@@ -1,0 +1,22 @@
+To use mongodb server on Arch:
+
+systemctl status mongodb
+systemctl start mongodb
+systemctl stop mongodb
+
+On other systems mongodb can be start with command 'mongod'
+This requires that path /data/db exists(maybe windows only?)
+
+If installed using brew : brew services start/stop mongodb
+
+Mongodb default port is: 27017
+
+To enter mongodb shell type
+mongo
+
+Commands within mongo shell:
+show collections / Shows collections withing database
+use example / Use which database, replace example with correct one
+db.books.find().pretty() / Use only find() if you want a list like view
+
+USE MongoDB Compass tool to get a good view of your database.
