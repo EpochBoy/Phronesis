@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Book = require('./book.model');
 
-var db = 'mongodb://localhost/example';
+var db = 'mongodb://localhost/test';
 var port = 8080;
 
 mongoose.connect(db);
@@ -69,7 +69,6 @@ app.post('/book', function(req, res) {
 
   newBook.save(function(err, book) {
     if (err) {
-      res,
       send('error saving book');
     }
     else {
